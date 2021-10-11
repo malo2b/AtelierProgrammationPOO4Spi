@@ -16,7 +16,7 @@ public class Taurren extends Personnage {
         int randomValue = (int)(Math.random()*(taille-1)) + 1;
         if (this.position + randomValue > 50) {
                 randomValue = positionSouhaitee() - this.position; // Pas opti mais blc
-        }
+            }
         return this.position + randomValue;
     }
 

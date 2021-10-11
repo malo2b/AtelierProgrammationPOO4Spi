@@ -16,9 +16,9 @@ public class Humain extends Personnage {
         super.deplacer(destination, gain);
         nbDeplacements++;
         // L'humain passe au niveau 2 a partir de 4 deplacements et 3 a partir de 6
-        if (nbDeplacements >= 4 && niveau == 1) {
+        if (nbDeplacements >= 4) {
             niveau = 2;
-        } else if (nbDeplacements >= 6 && niveau == 2) {
+        } else if (nbDeplacements >= 6) {
             niveau = 3;
         }
     }
